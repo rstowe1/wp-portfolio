@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="72f8d66c-a03f-452b-bfd1-065217f1b48f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/PortfolioItems.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/cardito.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/blogPostList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/portfolio.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/portfolioUnderContent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-node.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-node.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/page-2.js" beforeDir="false" />
-    </list>
+    <list default="true" id="72f8d66c-a03f-452b-bfd1-065217f1b48f" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +32,7 @@
   </component>
   <component name="ProjectId" id="1OmmAyY0TM96aQh5QEe09QyuO9q" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -76,7 +61,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1564591009087</updated>
-      <workItem from="1564591011901" duration="9499000" />
+      <workItem from="1564591011901" duration="9562000" />
     </task>
     <servers />
   </component>
