@@ -1,42 +1,58 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
+import { graphql, StaticQuery, Link } from "gatsby"
+import styled from "styled-components"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
+const MainMenuWrapper = styled.div`
+  display: flex;
+  background-color: rgb(3, 27, 77);
+`
+
+const MainMenuInner = styled.div`
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  width: 960px;
+  height: 100%;
+`
+
+const MenuItem = styled(Link)`
+  color: white;
+  display: block;
+  padding: 16px 16px;
+`
+
+const Header = () => (
+  <StaticQuery query={graphql`
+    {
+      allWordpressWpApiMenusMenusItems(filter: {
+        name: {
+          eq: "Main Menu"
+        }
+      }){
+        edges{
+          node{
+            name
+            items{
+              title
+              object_slug
+            }
+          }
+        }
+      }
+    }
+  `} render={props => (
+    <MainMenuWrapper>
+
+      <MainMenuInner>
+      <MenuItem to='/'>About</MenuItem>
+        {props.allWordpressWpApiMenusMenusItems.edges[0].node.items.map(item => (
+          <MenuItem to={`/${item.object_slug}`} key={item.title}>
+            {item.title}
+          </MenuItem>
+        ))}
+      </MainMenuInner>
+    </MainMenuWrapper>
+  )}/>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header
