@@ -5,8 +5,8 @@ const slash = require(`slash`)
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage, createRedirect } = actions
-  createRedirect({ fromPath: '/', toPath: '/home', redirectInBrowser: true, isPermanent: true })
-  return Promise((resolve, reject) => {
+  // createRedirect({ fromPath: '/', toPath: '/home', redirectInBrowser: true, isPermanent: true })
+  return new Promise((resolve, reject) => {
     // ==== PAGES (WORDPRESS NATIVE) ====
     graphql(
       `
