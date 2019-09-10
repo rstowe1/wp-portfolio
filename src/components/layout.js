@@ -1,6 +1,7 @@
-import React from 'react'
-import styled, {createGlobalStyle} from 'styled-components';
+import React from "react"
+import styled, { createGlobalStyle } from "styled-components"
 import Header from "./header"
+import BlogCard from "./about/BlogCard"
 
 const GlobalStyles = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
@@ -18,8 +19,8 @@ const LayoutWrapper = styled.div`
 
 const Layout = ({ children }) => (
   <div>
-    <GlobalStyles />
-    <Header />
+    <GlobalStyles/>
+    <Header/>
     <LayoutWrapper>
       {children}
     </LayoutWrapper>
