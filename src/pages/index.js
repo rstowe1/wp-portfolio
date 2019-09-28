@@ -8,7 +8,7 @@ import BlogCard from "../components/about/BlogCard"
 
 const Cont = styled.div`
 .card-container {
-    height: 650px;
+    height: 675px;
     margin: 0;
     padding: 0;
     top: 20px;
